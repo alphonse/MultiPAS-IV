@@ -11,7 +11,7 @@
 */
 
 int bluePin = 29; // FTM2 on 3.6 - for 3.2 use 25
-int greenPin = 5; // FTM0
+int greenPin = 23; // FTM0
 int redPin = 3;   // FTM1
 int irPin = 35;   // FTM3 on Teensy 3.6 - comment this line for 3.2 only
 int vPin = 4;
@@ -21,6 +21,7 @@ String inCharStr;
 
 void setup() {
   Serial.begin(9600);
+  analogWriteResolution(12); // provides better resolution on duty cycle
   setupPin(bluePin, 1367, 4095);
   setupPin(greenPin, 1373, 4095);
   setupPin(redPin, 1369, 4095);
