@@ -19,13 +19,12 @@ int i;
 char inChar[10];
 String inCharStr;
 
-void setup()
-
+void setup() {
   Serial.begin(9600);
-  analogWriteResolution(12); // provides better resolution on duty cycle
-  setupPin(bluePin, 1368, 4095);
-  setupPin(greenPin, 1370, 4095);
-  setupPin(redPin, 1372, 4095);
+  setupPin(bluePin, 1367, 4095);
+  setupPin(greenPin, 1373, 4095);
+  setupPin(redPin, 1369, 4095);
+  setupPin(irPin, 1371, 4095);  // comment this line for Teensy 3.6
   pinMode(vPin, OUTPUT);
 }
 
