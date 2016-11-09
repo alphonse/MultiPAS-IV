@@ -3,21 +3,24 @@
   and set the frequency of each through serial communication;
   reads voltage on PIN A0 for monitoring analog photodiode;
   Controls transitor switch for valve on pin 4.
+  
+  Updated for Teensy 3.6 2016-11-08; back compatible with 3.2.
 
   Al Fischer
   2016-09-01
 */
 
-int bluePin = 25; // FTM2
+int bluePin = 29; // FTM2 on 3.6 - for 3.2 use 25
 int greenPin = 5; // FTM0
 int redPin = 3;   // FTM1
+int irPin = 35;   // FTM3 on Teensy 3.6 - comment this line for 3.2 only
 int vPin = 4;
 int i;
 char inChar[10];
 String inCharStr;
 
 void setup()
-{
+
   Serial.begin(9600);
   analogWriteResolution(12); // provides better resolution on duty cycle
   setupPin(bluePin, 1368, 4095);
@@ -38,6 +41,7 @@ void loop()
   if (inCharStr.startsWith("b.")) setFreq(inCharStr, bluePin);
   if (inCharStr.startsWith("g.")) setFreq(inCharStr, greenPin);
   if (inCharStr.startsWith("r.")) setFreq(inCharStr, redPin);
+  if (inCharStr.startsWith("i.")) setFreq(inCharStr, irPin);
   if (inCharStr.startsWith("s.")) sweep(inCharStr, bluePin);
   if (inCharStr.startsWith("v.")) vSwitch(inCharStr, vPin);
 
