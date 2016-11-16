@@ -1,4 +1,4 @@
-# laserPAS
+# MultiPAS-IV
 pas control (c) 2016 Al Fischer - Smith Lab - University of Georgia unless otherwise noted.
 
 QMH folder (c) 2016 [National Instruments](http://www.ni.com/example/31091/en/), reproduced here for consistency.
