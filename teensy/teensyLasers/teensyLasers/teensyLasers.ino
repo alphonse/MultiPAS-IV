@@ -10,10 +10,10 @@
   2016-09-01
 */
 
-int bluePin = 29; // FTM2 on 3.6 - for 3.2 use 25
-int greenPin = 23; // FTM0
-int redPin = 3;   // FTM1
-int irPin = 35;   // FTM3 on Teensy 3.6 - comment this line for 3.2 only
+int bluePin = 3;   // FTM2 on 3.6 - for 3.2 use 25
+int greenPin = 29; // FTM0
+int redPin = 35;   // FTM1
+int irPin = 23;    // FTM3 on Teensy 3.6 - comment this line for 3.2 only
 int vPin = 4;
 int i;
 char inChar[10];
