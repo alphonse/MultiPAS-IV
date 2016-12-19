@@ -10,6 +10,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="crd_acquireWaveform.vi" Type="VI" URL="../crd/sub/crd_acquireWaveform.vi"/>
+		<Item Name="crd_processWaveform.vi" Type="VI" URL="../crd/sub/crd_processWaveform.vi"/>
 		<Item Name="MultiPAS-IV.vi" Type="VI" URL="../MultiPAS-IV.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -92,6 +94,7 @@
 			<Item Name="calSave.vi" Type="VI" URL="../sub/calSave.vi"/>
 			<Item Name="calSubset.vi" Type="VI" URL="../sub/calSubset.vi"/>
 			<Item Name="calSubtractBkg.vi" Type="VI" URL="../sub/calSubtractBkg.vi"/>
+			<Item Name="crd_fitTau.vi" Type="VI" URL="../crd/sub/crd_fitTau.vi"/>
 			<Item Name="fftGenX.vi" Type="VI" URL="../sub/fftGenX.vi"/>
 			<Item Name="fftGetMags.vi" Type="VI" URL="../sub/fftGetMags.vi"/>
 			<Item Name="fftGetMax.vi" Type="VI" URL="../sub/fftGetMax.vi"/>
@@ -107,6 +110,19 @@
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 			<Item Name="micImport.vi" Type="VI" URL="../sub/micImport.vi"/>
 			<Item Name="pdImport.vi" Type="VI" URL="../sub/pdImport.vi"/>
+			<Item Name="PicoErrorHandler.vi" Type="VI" URL="../crd/pico/PicoScope.llb/PicoErrorHandler.vi"/>
+			<Item Name="PicoScope2000aClose.vi" Type="VI" URL="../crd/pico/PicoScope2000a.llb/PicoScope2000aClose.vi"/>
+			<Item Name="PicoScope2000aGetBlock.vi" Type="VI" URL="../crd/pico/PicoScope2000a.llb/PicoScope2000aGetBlock.vi"/>
+			<Item Name="PicoScope2000aGetTimebase2.vi" Type="VI" URL="../crd/pico/PicoScope2000a.llb/PicoScope2000aGetTimebase2.vi"/>
+			<Item Name="PicoScope2000aOpen.vi" Type="VI" URL="../crd/pico/PicoScope2000a.llb/PicoScope2000aOpen.vi"/>
+			<Item Name="PicoScope2000aSettings.vi" Type="VI" URL="../crd/pico/PicoScope2000a.llb/PicoScope2000aSettings.vi"/>
+			<Item Name="PicoScope2000aUnitInfo.vi" Type="VI" URL="../crd/pico/PicoScope2000a.llb/PicoScope2000aUnitInfo.vi"/>
+			<Item Name="PicoScopeAdcToVolts.vi" Type="VI" URL="../crd/pico/PicoScope.llb/PicoScopeAdcToVolts.vi"/>
+			<Item Name="PicoScopeVoltsToAdc.vi" Type="VI" URL="../crd/pico/PicoScope.llb/PicoScopeVoltsToAdc.vi"/>
+			<Item Name="PicoStatus.vi" Type="VI" URL="../crd/pico/PicoScope.llb/PicoStatus.vi"/>
+			<Item Name="PS2000a.dll" Type="Document" URL="PS2000a.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="QMH Add Message to Queue (Array).vi" Type="VI" URL="../sub/QMH/QMH Add Message to Queue (Array).vi"/>
 			<Item Name="QMH Add Message to Queue (Single Element).vi" Type="VI" URL="../sub/QMH/QMH Add Message to Queue (Single Element).vi"/>
 			<Item Name="QMH Add Message to Queue.vi" Type="VI" URL="../sub/QMH/QMH Add Message to Queue.vi"/>
